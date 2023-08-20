@@ -47,7 +47,7 @@ body {
 }
 
 #abus img{
-  width: 40rem;
+  width: 55rem;
 }
 
 #impnote {
@@ -73,13 +73,13 @@ h1 {
 .rsvp_but {
   padding: auto 0;
   margin: 0 auto;
-  width: 25rem;
+  width: 45%;
   height: 7rem;
   background-color: var(--quat-color);
   display: flex;
   border: 1rem solid #5e0003;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -161,15 +161,11 @@ h4 {
 }
 
 #cologe{
+  margin: 1rem auto;
   display: grid;
-  margin-top: 1rem;
-  min-width: 0;
-  min-height: 0;
-  max-width: 100%;
-  overflow: hidden;
-  align: right;
+  justify-content: center;
   gap: 0.5rem;
-  grid-template-columns: 25% 45% 25%;
+  grid-template-columns: 26% 45% 26%;
   grid-template-rows: auto auto;
 }
 
