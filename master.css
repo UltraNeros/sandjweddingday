@@ -1,6 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: cgoth;
+  src: url(font/CenturyGothic.ttf);
 }
 
 html {
@@ -9,101 +15,179 @@ html {
   --tirt-color: #ffffff; /*#CACAAA #064789*/
   --quat-color: #2b0001;
   background-color: var(--prim-color);
-  box-sizing: border-box;
+  font-family: cgoth;
 }
 
 body {
   margin: 0 auto;
-  padding: 0.2em 0.5em 0.8em;
+  padding: 0.1rem 0.5rem 0.8rem;
   width: 60%;
   background-color: var(--seco-color); /*#4D148C*/
 }
 
 #top_padding {
-  height: 0.4em;
+  height: 0.4rem;
   border: 0;
 }
 
 #top_image {
-  margin: 0 auto 0;
-  width: 97%;
+  width: 100%;
   display: flex;
-  border: 1em outset #5e0003;
+  border: 1rem solid #5e0003;
+}
+
+#abus {
+  margin: 0.5rem 0 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--tirt-color);
+  background-color: var(--quat-color);
+  border: 1rem solid #5e0003;
+}
+
+#abus img{
+  width: 40rem;
+}
+
+#impnote {
+  font-size: 1rem;
+}
+
+.fa-face-grin-tongue-squint {
+  font-size: 1.2rem;
 }
 
 h1 {
-  margin: 0.2em 0;
-  padding: 0.4em;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-align: center;
   color: var(--tirt-color);
-  background-color: var(--quat-color);
 }
 
 #rsvpform {
-  margin: 0 auto;
+  margin: 0 auto 0.5rem;
   width: 100%;
-  height: 8em;
   display: flex;
 }
 
 .rsvp_but {
   padding: auto 0;
   margin: 0 auto;
-  width: 16em;
-  height: 3em;
+  width: 25rem;
+  height: 7rem;
   background-color: var(--quat-color);
   display: flex;
-  border: 1em outset #5e0003;
+  border: 1rem solid #5e0003;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-decoration: none;
   align-items: center;
   justify-content: center;
 }
 
-h2 {
-  margin-bottom: 0.4em;
-  padding: 1em;
-  text-align: center;
-  color: var(--tirt-color);
+#vencontainer {
+  display: flex;
+}
+
+#vendir {
+  width: 15%;
   background-color: var(--quat-color);
+  border: 1rem solid #5e0003;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vendir i {
+  padding-bottom: 0.2rem;
+  font-size: 4rem;
+  color: white;
+}
+
+#vendir p {
+  color: white;
+}
+
+#venweb {
+  margin-left: 0.5rem;
+  width: 15%;
+  background-color: var(--quat-color);
+  border: 1rem solid #5e0003;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#venweb i {
+  padding-bottom: 0.2rem;
+  font-size: 4rem;
+  color: white;
+}
+
+#venweb p {
+  color: white;
 }
 
 #venue {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  width: 70%;
   text-align: center;
+  background-color: var(--quat-color);
+  color: white;
+  border: 1rem solid #5e0003;
+}
+
+#venue a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#venue i {
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.7rem;
 }
 
 h4 {
-  margin: 0.5em 1em 0;
-  font-size: 1.5em;
+  margin: 0.5rem 1rem 0;
+  font-size: 1.2rem;
 }
 
 #cologe{
   display: grid;
-  width: 80em;
-  gap: 2em;
-
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: auto auto auto;
+  margin-top: 1rem;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  align: right;
+  gap: 0.5rem;
+  grid-template-columns: 25% 45% 25%;
+  grid-template-rows: auto auto;
 }
 
 #cologe>img{
-display: inline;
+  max-width: 100%;
+  height: auto;
+  border: 1rem solid #5e0003;
 }
 
 .phot1{
   grid-column: 2 / 3;
-  grid-row: 1 / 4;
-  width: auto;
+  grid-row: 1 / 3;
+  justify-content: center;
+  align-self: center;
 }
 
 .phot2{
-  grid-column: 1 / 2;
+  grid-column: 1 / 1;
   grid-row: 1 / 2;
 }
 
@@ -125,6 +209,6 @@ display: inline;
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3rem;
   }
 }
