@@ -74,12 +74,13 @@ h1 {
   padding: auto 0;
   margin: 0 auto;
   width: 45%;
-  height: 7rem;
+  height: 8rem;
   background-color: var(--quat-color);
   display: flex;
   border: 1rem solid #5e0003;
   color: white;
   font-size: 2rem;
+  text-align: center;
   text-decoration: none;
   align-items: center;
   justify-content: center;
